@@ -32,7 +32,7 @@ export default function Home({ data }: HomeProps) {
         <section>
           <h1>{data[indexImage].title}</h1>
           <button>
-            <a href="https://www.corebiz.ag/pt/" target="blank">
+            <a href="https://www.corebiz.ag/pt/" target="blank" aria-label="veja mais">
               veja mais
               <img src="./images/arrow-dropright-circle.svg" alt="ícone" />
             </a>
