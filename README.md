@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Go Beyond 2021 - Final Challenge - Corebiz
 
-## Getting Started
+<h1 align="center">
+    <img alt="Layout Website" src="public/images/finalChallenge.JPG" width="100%" />
+</h1>
 
-First, run the development server:
+## 🚀 O desafio
+
+Fazer o site conforme o design do Adobe XD
+
+Site: Aqui vai um link
+
+## :crystal_ball: Technologies
+
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [NextJs](https://nextjs.org/)
+- [Sass](https://sass-lang.com/)
+
+## :arrow_forward: Instalação e uso
+
+Clone o repositório
 
 ```bash
-npm run dev
-# or
-yarn dev
+$ git clone https://github.com/evertonvargas/final-challenge
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Siga os passos abaixo
+```bash
+# Instale as dependências
+$ npm i or yarn
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# Inicie o servidor
+$ npm run dev or yarn dev
+```
+Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## ✨ Docs
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+O projeto foi desenvolvido utilizando *NextJs* e *Sass* para a parte estilização.
 
-## Learn More
+Contém apenas uma página que fica na pasta pages e se chama *index.tsx*, já o seu seu layout fica dentro da pasta styles em *home.module.scss*. Conforme a imagem:
 
-To learn more about Next.js, take a look at the following resources:
+<img alt="Home Website" src="public/images/home.JPG" />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Foram criados apenas 3 componentes para todo o projeto:
+- Header
+- Footer
+- Logo da Corebiz (mesmo svg, apenas com a cor do fill diferente)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<img alt="Components Project" src="public/images/components.JPG" />
 
-## Deploy on Vercel
+### Requisição API
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+>A parte da requisição da API foi feita com getStaticProps do NextJs, o motivo é pra ter mais performance no site pois vai ser criado uma espécie de Cache estático da página. 
+>
+>Dessa forma, não preciso sempre fazer chamadas a API solicitando dados. Além disso, foi colocado um revalidate de 1 vez por semana,essa propriedade é utilizada para informar à nossa função quando o conteúdo da página deve ser atualizado.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img alt="getStaticProps" src="public/images/getStaticProps.png" />
