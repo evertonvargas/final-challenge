@@ -12,13 +12,13 @@ export function Footer() {
             <p>direitos reservados, Corebiz 2021</p>
           </div>
           <div>
-            <a href="">
+            <a href="https://www.facebook.com/corebiz.ag/" target="blank">
               <img src="images/facebook.svg" alt="facebook" />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/corebizag/" target="blank">
               <img src="images/instagran.svg" alt="instagram" />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/company/corebiz-brasil" target="blank">
               <img src="images/linkedin.svg" alt="linkedin" />
             </a>
           </div>

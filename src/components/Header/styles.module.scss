@@ -34,7 +34,11 @@
 
 @media (max-width: 1000px) {
   .container {
-    padding: 4rem 4rem 5rem;
+    padding: 2.5rem 4rem 5rem;
+
+    svg{
+      width: 125px;
+    }
 
     nav {
       display: none;
