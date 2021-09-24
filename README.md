@@ -8,7 +8,7 @@
 
 Fazer o site conforme o design do Adobe XD
 
-Site: Aqui vai um link
+Site: https://final-challenge.vercel.app/
 
 ## :crystal_ball: Technologies
 
@@ -59,3 +59,9 @@ Foram criados apenas 3 componentes para todo o projeto:
 >Dessa forma, não preciso sempre fazer chamadas a API solicitando dados. Além disso, foi colocado um revalidate de 1 vez por semana,essa propriedade é utilizada para informar à nossa função quando o conteúdo da página deve ser atualizado.
 
 <img alt="getStaticProps" src="public/images/getStaticProps.png" />
+
+## :trophy: LightHouse
+
+Resultado de desempenho do site no LightHouse
+
+<img alt="LightHouse" src="public/images/lighthouse.JPG" />
