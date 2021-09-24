@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8rem 5rem;
+
+  section {
+    position: relative;
+
+    nav {
+      a {
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+        line-height: 3rem;
+
+        &:hover,
+        &:focus {
+          border-bottom: 1px solid var(--white);
+          color: var(--gray);
+          transition: color 0.1s ease-in;
+        }
+
+        &:not(:first-child) {
+          margin-left: 4rem;
+        }
+      }
+    }
+  }
+
+  .menuToggle {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 4rem 4rem 5rem;
+
+    nav {
+      display: none;
+    }
+
+    .menuToggle {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      align-self: flex-end;
+
+      > div:nth-of-type(1),
+      > div:nth-of-type(2),
+      > div:nth-of-type(3) {
+        background: var(--white);
+        height: 4px;
+        width: 100%;
+        margin: 4px auto;
+        transition-duration: 0.3s;
+      }
+    }
+
+    .menu {
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      z-index: 4;
+
+      > div:nth-of-type(1),
+      > div:nth-of-type(2),
+      > div:nth-of-type(3) {
+        background: var(--white);
+        height: 4px;
+        width: 100%;
+        margin: 4px auto;
+        transition-duration: 0.3s;
+      }
+
+      > div:nth-of-type(1) {
+        transform: rotate(45deg) translate(3px, 5px);
+      }
+
+      > div:nth-of-type(2) {
+        opacity: 0;
+      }
+
+      > div:nth-of-type(3) {
+        transform: rotate(-45deg) translate(6px, -9px);
+      }
+    }
+
+    .menuOn {
+      position: absolute;
+      top: -15px;
+      right: 0;
+
+      width: 300px;
+      height: 250px;
+      border-radius: 0 0 0 2rem;
+      z-index: 2;
+
+      background: var(--background);
+      display: flex;
+      justify-content: flex-end;
+
+      nav {
+        margin-top: 4rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-start;
+        gap: 1rem;
+
+        a:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
