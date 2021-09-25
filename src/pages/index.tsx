@@ -24,49 +24,56 @@ export default function Home({ data }: HomeProps) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width" />
-        <meta name="description" content="Desafio final do Go Beyond 2021, desenvolvido com Next.js" />
+        <meta
+          name="description"
+          content="Desafio final do Go Beyond 2021, desenvolvido com Next.js"
+        />
         <title>Go Beyond 2021 - Final Challenge - Corebiz</title>
       </Head>
       <Header />
-      <main className={styles.container}>
-        <section>
-          <h1>{data[indexImage].title}</h1>
-          <button>
-            <a href="https://www.corebiz.ag/pt/" target="blank" aria-label="veja mais">
-              veja mais
-              <img src="./images/arrow-dropright-circle.svg" alt="ícone" />
-            </a>
-          </button>
-        </section>
-        <div>
-          <img
-            className={indexImage === 0 ? styles.border : undefined}
-            src={data[0].thumb}
-            alt={data[0].title}
-            onClick={() => setIndexImage(0)}
-          />
-          <img
-            className={indexImage === 1 ? styles.border : undefined}
-            src={data[1].thumb}
-            alt={data[1].title}
-            onClick={() => setIndexImage(1)}
-          />
-          <img
-            className={indexImage === 2 ? styles.border : undefined}
-            src={data[2].thumb}
-            alt={data[2].title}
-            onClick={() => setIndexImage(2)}
-          />
-          <img
-            className={indexImage === 3 ? styles.border : undefined}
-            src={data[3].thumb}
-            alt={data[3].title}
-            onClick={() => setIndexImage(3)}
-          />
-        </div>
-        <img src={data[indexImage].imgUrl} alt={data[0].title} />
-      </main>
-      <Footer />
+        <main className={styles.container}>
+          <section>
+            <h1>{data[indexImage].title}</h1>
+            <button>
+              <a
+                href="https://www.corebiz.ag/pt/"
+                target="blank"
+                aria-label="veja mais"
+              >
+                veja mais
+                <img src="./images/arrow-dropright-circle.svg" alt="ícone" />
+              </a>
+            </button>
+          </section>
+          <div>
+            <img
+              className={indexImage === 0 ? styles.border : undefined}
+              src={data[0].thumb}
+              alt={data[0].title}
+              onClick={() => setIndexImage(0)}
+            />
+            <img
+              className={indexImage === 1 ? styles.border : undefined}
+              src={data[1].thumb}
+              alt={data[1].title}
+              onClick={() => setIndexImage(1)}
+            />
+            <img
+              className={indexImage === 2 ? styles.border : undefined}
+              src={data[2].thumb}
+              alt={data[2].title}
+              onClick={() => setIndexImage(2)}
+            />
+            <img
+              className={indexImage === 3 ? styles.border : undefined}
+              src={data[3].thumb}
+              alt={data[3].title}
+              onClick={() => setIndexImage(3)}
+            />
+          </div>
+          <img src={data[indexImage].imgUrl} alt={data[0].title} />
+        </main>
+        <Footer />
     </>
   );
 }

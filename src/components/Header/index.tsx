@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import { LogoCorebiz } from "../LogoCorebiz";
 
 import styles from "./styles.module.scss";
@@ -12,18 +13,10 @@ export function Header() {
       <section>
         <div className={menu ? styles.menuOn : undefined}>
           <nav>
-            <a href="https://www.corebiz.ag/pt/about/" target="blank">
-              a corebiz
-            </a>
-            <a href="https://www.corebiz.ag/pt/#framework-title" target="blank">
-              serviços
-            </a>
-            <a href="https://www.corebiz.ag/pt/cases/" target="blank">
-              cases
-            </a>
-            <a href="https://www.corebiz.ag/pt/contato/" target="blank">
-              contato
-            </a>
+            <a href="https://www.corebiz.ag/pt/about/" target="blank">a corebiz</a>
+            <a href="https://www.corebiz.ag/pt/#framework-title" target="blank">serviços</a>
+            <a href="https://www.corebiz.ag/pt/cases/" target="blank">cases</a>
+            <a href="https://www.corebiz.ag/pt/contato/" target="blank">contato</a>
           </nav>
           <div
             onClick={() => setMenu(!menu)}
